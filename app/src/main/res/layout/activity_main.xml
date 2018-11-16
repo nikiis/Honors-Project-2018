@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.nicole.musicproject.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_addchords">
+
+
+        <Button
+            android:id="@+id/chord_one"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="165dp"
+            android:background="#A3A3A3"
+            android:onClick="showChords"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/chord_two"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/chord_one"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/chord_one"
+            android:layout_toRightOf="@+id/chord_one"
+            android:background="#A3A3A3"
+            android:onClick="showChords"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/chord_three"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/chord_two"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/chord_two"
+            android:layout_toRightOf="@+id/chord_two"
+            android:background="#A3A3A3"
+            android:onClick="showChords"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/chord_four"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/chord_three"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/chord_three"
+            android:layout_toRightOf="@+id/chord_three"
+            android:background="#A3A3A3"
+            android:onClick="showChords"
+            android:textAllCaps="false"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
