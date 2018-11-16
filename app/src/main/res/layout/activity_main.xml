@@ -6,12 +6,4 @@
     android:layout_height="match_parent"
     tools:context="com.example.nicole.musicproject.MainActivity">
 
-    <Button
-        android:id="@+id/playCButton"
-        android:layout_width="159dp"
-        android:layout_height="80dp"
-        android:text="Play Chord C"
-        android:onClick="playcChord"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="171dp" />
 </android.support.constraint.ConstraintLayout>
